@@ -4,12 +4,27 @@
 
 #include <dt-bindings/led/led.h>
 
-&spi1 {
+&pinctrl {
+	spi3_default: spi3_default {
+		group1 {
+			psels = <NRF_PSEL(SPIM_MOSI, 0, 6)>;
+		};
+	};
+
+	spi3_sleep: spi3_sleep {
+		group1 {
+			psels = <NRF_PSEL(SPIM_MOSI, 0, 6)>;
+			low-power-enable;
+		};
+	};
+};
+
+&spi3 {
 	compatible = "nordic,nrf-spim";
 	status = "okay";
-	pinctrl-0 = <&spi1_default>;
-	pinctrl-names = "default";
-	// Unused pins (moved to pinctrl node), needed for SPI def, but not used by ws2812 driver.
+	pinctrl-0 = <&spi3_default>;
+	pinctrl-1 = <&spi3_sleep>;
+	pinctrl-names = "default", "sleep";
 
 	led_strip: ws2812@0 {
 		compatible = "worldsemi,ws2812-spi";
@@ -32,15 +47,5 @@
 / {
 	chosen {
 		zmk,underglow = &led_strip;
-	};
-};
-
-&pinctrl {
-	spi1_default: spi1_default {
-		group1 {
-			psels = <NRF_PSEL(SPIM1_SCK, 0, 5)>,
-					<NRF_PSEL(SPIM1_MOSI, 0, 6)>,
-					<NRF_PSEL(SPIM1_MISO, 0, 7)>;
-		};
 	};
 };
