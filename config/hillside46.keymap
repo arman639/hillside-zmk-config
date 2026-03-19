@@ -350,7 +350,7 @@
 &lt 9 ESCAPE    &kp Q  &kp W  &kp E     &kp R                          &kp T                                                      &kp Y       &kp U      &kp I      &kp O    &kp P     &kp GRAVE
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F                          &kp G                                                    &kp H       &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V                          &kp B        &none   &none                                    &kp N       &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mkp LCLK
-                              &kp LGUI  &layer_tap_release_alttab A 4  &lt 3 SPACE                                                            &sk RSHIFT  &oslr 2 5  &kp RALT
+                            &none  &kp LGUI  &layer_tap_release_alttab A 4  &lt 3 SPACE                                                            &sk RSHIFT  &oslr 2 5  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -362,7 +362,7 @@
 &super_alttab_macro  &none          &none             &kp LG(PAGE_UP)    &none     &none                                                     &none      &none             &none      &none           &none            &trans
 &esc_ignore_mods     &kp EXCL       &kp AT            &kp HASH           &kp DLLR  &kp PRCNT                                                &kp CARET  &kp AMPS          &kp ASTRK  &kp LPAR        &kp RPAR         &kp TILDE
 &trans               &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE  &kp ENTER  &trans   &trans                                     &kp PLUS   &kp MINUS         &kp EQUAL  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
-                                                      &trans             &trans    &kp SPACE                                                             &trans     &lt 2 UNDERSCORE  &trans
+                                                   &none   &trans             &trans    &kp SPACE                                                             &trans     &lt 2 UNDERSCORE  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -374,7 +374,7 @@
 &kp TAB     &none         &mo 13              &mo 12      &none      &none                                                         &kp LC(Y)           &kp HOME   &kp UP     &kp END    &kp DELETE            &none
 &kp ESCAPE  &kp LEFT_GUI  &mt LALT LC(LS(S))  &kp RSHIFT  &kp LCTRL  &kp LG(T)                                                  &kp TAB             &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSPC              &msc SCRL_UP
 &trans      &kp LC(Z)     &kp LC(X)           &kp LC(C)   &kp LC(V)  &none      &kp C_MUTE  &trans                                     &delete_line_macro  &kp PG_UP  &kp PG_DN  &kp RET    &comment_ignore_mods  &msc SCRL_DOWN
-                                              &trans      &mo 11     &trans                                                                    &lt 1 UNDERSCORE    &trans     &trans
+                                           &none   &trans      &mo 11     &trans                                                                    &lt 1 UNDERSCORE    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -386,7 +386,7 @@
 &trans            &kp F3  &kp F4    &kp F5    &kp F6      &kp F7                                                 &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_MINUS   &kp KP_NUMLOCK
 &kp LEFT_SHIFT    &kp F2  &kp F10   &kp F11   &kp F12     &kp F8                                                &none            &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp BSPC       &kp ESCAPE
 &kp LEFT_CONTROL  &kp F1  &mkp MB4  &mkp MB5  &kp LA(F5)  &kp F9  &trans &trans                                      &kp KP_PLUS      &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_DIVIDE  &kp SCROLLLOCK
-                                    &trans    &trans      &trans                                                             &kp KP_ENTER     &kp N0     &kp KP_DOT
+                                 &none   &trans    &trans      &trans                                                             &kp KP_ENTER     &kp N0     &kp KP_DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -398,7 +398,7 @@
 &trans         &trans                            &sl 10                   &sl 8                      &trans                     &none                                                           &trans  &studio_unlock  &trans  &trans  &trans  &trans
 &to 0          &hrm_hold_macro LS(LEFT_CONTROL)  &hrm_behavior LALT LALT  &hrm_behavior LSHFT LSHFT  &hrm_behavior LCTRL LCTRL  &sl 14                                                      &trans  &trans          &trans  &trans  &trans  &trans
 &kp RC(RSHFT)  &kp LC(HOME)                      &kp LC(END)              &none                      &none                      &kp PAUSE_BREAK  &trans &trans                                      &trans  &trans          &trans  &trans  &trans  &trans
-                                                                          &trans                     &trans                     &trans                                                                      &trans  &trans          &trans
+                                                               &none           &trans                     &trans                     &trans                                                                      &trans  &trans          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -410,7 +410,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                 &sys_reset  &trans                   &trans                       &trans                     &trans                           &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                              &trans      &hrm_behavior RALT RALT  &hrm_behavior RSHIFT RSHIFT  &hrm_behavior RCTRL RCTRL  &hrm_behavior LEFT_GUI LEFT_GUI  &to 0
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                     &kp INSERT  &trans                   &trans                       &trans                     &trans                           &trans
-                        &trans  &trans  &trans                                                             &trans      &trans                   &trans
+                    &none    &trans  &trans  &trans                                                             &trans      &trans                   &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -421,7 +421,7 @@
 &none  &none  &none  &none  &none  &none                           &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                            &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none &none                    &none  &none  &none  &none  &none  &none
-                     &none  &none  &none                                &none  &none  &none
+                  &none   &none  &none  &none                                &none  &none  &none
             >;
         };
 
@@ -431,7 +431,7 @@
 &trans  &trans  &trans     &trans     &trans     &trans                                                 &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
 &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans                                                 &trans                             &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans  &trans &trans                                      &trans     &mkp RCLK       &trans          &trans           &trans  &trans
-                           &trans     &trans     &trans                                                             &mkp MCLK  &mkp LCLK       &to 0
+                        &none   &trans     &trans     &trans                                                             &mkp MCLK  &mkp LCLK       &to 0
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -442,7 +442,7 @@
 &none  &none  &kp LC(W)        &none     &none                       &kp LC(T)                                 &none        &none     &none      &none      &none     &none
 &to 0  &none  &kp LC(PAGE_UP)  &none     &kp LC(PAGE_DOWN)           &none                                      &none        &sk RALT  &sk RSHFT  &sk RCTRL  &sk RGUI  &none
 &none  &none  &none            &kp CAPS  &none                       &kp PAUSE_BREAK  &none  &none                  &enye_macro  &none     &none      &none      &none     &none
-                               &none     &cancel_custom_layer_macro  &none                                          &none        &none     &none
+                           &none    &none     &cancel_custom_layer_macro  &none                                          &none        &none     &none
             >;
         };
 
@@ -451,7 +451,7 @@
 &none  &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE                         &none       &none  &none  &none  &none  &none
 &none  &none         &none             &none              &none            &none                                &none       &none  &none  &none  &none  &none
 &none  &none         &none             &none              &none            &none       &none &none                   &none       &none  &none  &none  &none  &none
-                                       &none              &none            &kp SPACE                                 &kp RETURN  &none  &none
+                                    &none   &none              &none            &kp SPACE                                 &kp RETURN  &none  &none
             >;
         };
 
@@ -460,7 +460,7 @@
 &none  &kp LA(F4)       &kp LG(LEFT)   &kp LG(UP_ARROW)  &kp LG(RIGHT)  &none                           &none  &none  &none  &none  &none  &none
 &none  &kp PRINTSCREEN  &kp LG(LS(S))  &none             &none          &none                           &none  &none  &none  &none  &none  &none
 &none  &none            &none          &none             &none          &none  &none &none                    &none  &none  &none  &none  &none  &none
-                                       &none             &none          &none                                &none  &none  &none
+                                   &none    &none             &none          &none                                &none  &none  &none
             >;
 
             label = "win_layer";
@@ -471,7 +471,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans                                          &super_arrow_behavior UP_ARROW UP_ARROW      &trans                                            &trans              &trans
 &trans  &trans  &trans  &trans  &trans  &trans                              &trans  &super_arrow_x2_behavior LEFT_ARROW LEFT_ARROW  &super_arrow_behavior DOWN_ARROW DOWN_ARROW  &super_arrow_x2_behavior RIGHT_ARROW RIGHT_ARROW  &delete_line_macro  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans                     &trans  &trans                                          &trans                                       &trans                                            &trans              &trans
-                        &trans  &trans  &trans                                    &trans  &trans                                          &trans
+                    &trans    &trans  &trans  &trans                                    &trans  &trans                                          &trans
             >;
         };
 
@@ -480,7 +480,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                              &trans  &trans                                          &super_arrow_x2_behavior UP_ARROW UP_ARROW      &trans                                            &trans              &trans
 &trans  &trans  &trans  &trans  &trans  &trans                              &trans  &super_arrow_x2_behavior LEFT_ARROW LEFT_ARROW  &super_arrow_x2_behavior DOWN_ARROW DOWN_ARROW  &super_arrow_x2_behavior RIGHT_ARROW RIGHT_ARROW  &delete_line_macro  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans                      &trans  &trans                                          &trans                                          &trans                                            &trans              &trans
-                        &trans  &trans  &trans                                    &trans  &trans                                          &trans
+                    &trans    &trans  &trans  &trans                                    &trans  &trans                                          &trans
             >;
         };
 
@@ -489,7 +489,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans                                          &super_arrow_xhalf_behavior UP_ARROW UP_ARROW      &trans                                            &trans              &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &super_arrow_x2_behavior LEFT_ARROW LEFT_ARROW  &super_arrow_xhalf_behavior DOWN_ARROW DOWN_ARROW  &super_arrow_x2_behavior RIGHT_ARROW RIGHT_ARROW  &delete_line_macro  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans                           &trans  &trans                                          &trans                                             &trans                                            &trans              &trans
-                        &trans  &trans  &trans                                    &trans  &trans                                          &trans
+                    &trans    &trans  &trans  &trans                                    &trans  &trans                                          &trans
             >;
         };
 
@@ -498,7 +498,7 @@
 &trans  &trans  &trans          &trans        &trans  &trans                                    &trans  &trans          &kp INSERT  &trans  &trans  &trans
 &trans  &trans  &kp SCROLLLOCK  &trans        &trans  &trans                                    &trans  &trans          &trans      &trans  &trans  &trans
 &trans  &trans  &trans          &kp CAPSLOCK  &trans  &trans  &trans &trans                             &trans  &kp KP_NUMLOCK  &trans      &trans  &trans  &trans
-                                &trans        &trans  &trans                                    &trans  &trans          &trans
+                            &trans    &trans        &trans  &trans                                    &trans  &trans          &trans
             >;
 
             label = "Toggle_Layer";
